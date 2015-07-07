@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11AB00021B3915B40031379D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AB00011B3915B40031379D /* AppDelegate.m */; };
+		11AB00081B3915B40031379D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11AB00061B3915B40031379D /* Main.storyboard */; };
+		11AB000A1B3915B40031379D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11AB00091B3915B40031379D /* Images.xcassets */; };
+		11AB000D1B3915B40031379D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11AB000B1B3915B40031379D /* LaunchScreen.xib */; };
+		11AB00191B3915B40031379D /* Health_ExporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AB00181B3915B40031379D /* Health_ExporterTests.m */; };
+		11AB00291B3917900031379D /* HEHealthKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AB00281B3917900031379D /* HEHealthKitController.m */; };
+		11AB002A1B3917900031379D /* HEHealthKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AB00281B3917900031379D /* HEHealthKitController.m */; };
+		11ABFFFF1B3915B40031379D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ABFFFE1B3915B40031379D /* main.m */; };
+		11B6E5481B3A1C500036D492 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B6E5471B3A1C500036D492 /* HealthKit.framework */; };
+		11B6E5541B3FAFD30036D492 /* SampleQueryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B6E5531B3FAFD30036D492 /* SampleQueryViewController.m */; };
+		11C6A9991B48CA4E00C3A8E9 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 11C6A9981B48CA4E00C3A8E9 /* iTunesArtwork */; };
+		11DC5CCB1B44DF3600E4BDA8 /* HEQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CCA1B44DF3600E4BDA8 /* HEQuery.m */; };
+		11DC5CCC1B44DF3600E4BDA8 /* HEQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CCA1B44DF3600E4BDA8 /* HEQuery.m */; };
+		11DC5CCF1B4589AD00E4BDA8 /* HESampleQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CCE1B4589AD00E4BDA8 /* HESampleQuery.m */; };
+		11DC5CD01B4589AD00E4BDA8 /* HESampleQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CCE1B4589AD00E4BDA8 /* HESampleQuery.m */; };
+		11DC5CDE1B484C8500E4BDA8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DC5CDD1B484C8500E4BDA8 /* SystemConfiguration.framework */; };
+		11DC5CFC1B484D4000E4BDA8 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CE51B484D4000E4BDA8 /* JSONModel.m */; };
+		11DC5CFD1B484D4000E4BDA8 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CE51B484D4000E4BDA8 /* JSONModel.m */; };
+		11DC5CFE1B484D4000E4BDA8 /* JSONModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CE71B484D4000E4BDA8 /* JSONModelArray.m */; };
+		11DC5CFF1B484D4000E4BDA8 /* JSONModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CE71B484D4000E4BDA8 /* JSONModelArray.m */; };
+		11DC5D001B484D4000E4BDA8 /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CE91B484D4000E4BDA8 /* JSONModelClassProperty.m */; };
+		11DC5D011B484D4000E4BDA8 /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CE91B484D4000E4BDA8 /* JSONModelClassProperty.m */; };
+		11DC5D021B484D4000E4BDA8 /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CEB1B484D4000E4BDA8 /* JSONModelError.m */; };
+		11DC5D031B484D4000E4BDA8 /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CEB1B484D4000E4BDA8 /* JSONModelError.m */; };
+		11DC5D041B484D4000E4BDA8 /* NSArray+JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CEE1B484D4000E4BDA8 /* NSArray+JSONModel.m */; };
+		11DC5D051B484D4000E4BDA8 /* NSArray+JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CEE1B484D4000E4BDA8 /* NSArray+JSONModel.m */; };
+		11DC5D061B484D4000E4BDA8 /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CF21B484D4000E4BDA8 /* JSONAPI.m */; };
+		11DC5D071B484D4000E4BDA8 /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CF21B484D4000E4BDA8 /* JSONAPI.m */; };
+		11DC5D081B484D4000E4BDA8 /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CF41B484D4000E4BDA8 /* JSONHTTPClient.m */; };
+		11DC5D091B484D4000E4BDA8 /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CF41B484D4000E4BDA8 /* JSONHTTPClient.m */; };
+		11DC5D0A1B484D4000E4BDA8 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CF61B484D4000E4BDA8 /* JSONModel+networking.m */; };
+		11DC5D0B1B484D4000E4BDA8 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CF61B484D4000E4BDA8 /* JSONModel+networking.m */; };
+		11DC5D0C1B484D4000E4BDA8 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CF91B484D4000E4BDA8 /* JSONKeyMapper.m */; };
+		11DC5D0D1B484D4000E4BDA8 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CF91B484D4000E4BDA8 /* JSONKeyMapper.m */; };
+		11DC5D0E1B484D4000E4BDA8 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CFB1B484D4000E4BDA8 /* JSONValueTransformer.m */; };
+		11DC5D0F1B484D4000E4BDA8 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC5CFB1B484D4000E4BDA8 /* JSONValueTransformer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11AB00131B3915B40031379D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11ABFFF11B3915B40031379D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11ABFFF81B3915B40031379D;
+			remoteInfo = "Health Exporter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11AB00001B3915B40031379D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		11AB00011B3915B40031379D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		11AB00071B3915B40031379D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11AB00091B3915B40031379D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		11AB000C1B3915B40031379D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		11AB00121B3915B40031379D /* Health ExporterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Health ExporterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11AB00171B3915B40031379D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11AB00181B3915B40031379D /* Health_ExporterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Health_ExporterTests.m; sourceTree = "<group>"; };
+		11AB00241B3916350031379D /* Health Exporter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Health Exporter.entitlements"; sourceTree = "<group>"; };
+		11AB00271B3917900031379D /* HEHealthKitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HEHealthKitController.h; sourceTree = "<group>"; };
+		11AB00281B3917900031379D /* HEHealthKitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HEHealthKitController.m; sourceTree = "<group>"; };
+		11ABFFF91B3915B40031379D /* Health Exporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Health Exporter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11ABFFFD1B3915B40031379D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11ABFFFE1B3915B40031379D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		11B6E5471B3A1C500036D492 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		11B6E5521B3FAFD30036D492 /* SampleQueryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleQueryViewController.h; sourceTree = "<group>"; };
+		11B6E5531B3FAFD30036D492 /* SampleQueryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleQueryViewController.m; sourceTree = "<group>"; };
+		11C6A9981B48CA4E00C3A8E9 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		11DC5CC91B44DF3600E4BDA8 /* HEQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HEQuery.h; sourceTree = "<group>"; };
+		11DC5CCA1B44DF3600E4BDA8 /* HEQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HEQuery.m; sourceTree = "<group>"; };
+		11DC5CCD1B4589AD00E4BDA8 /* HESampleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HESampleQuery.h; sourceTree = "<group>"; };
+		11DC5CCE1B4589AD00E4BDA8 /* HESampleQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HESampleQuery.m; sourceTree = "<group>"; };
+		11DC5CDD1B484C8500E4BDA8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		11DC5CE41B484D4000E4BDA8 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
+		11DC5CE51B484D4000E4BDA8 /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
+		11DC5CE61B484D4000E4BDA8 /* JSONModelArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelArray.h; sourceTree = "<group>"; };
+		11DC5CE71B484D4000E4BDA8 /* JSONModelArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelArray.m; sourceTree = "<group>"; };
+		11DC5CE81B484D4000E4BDA8 /* JSONModelClassProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelClassProperty.h; sourceTree = "<group>"; };
+		11DC5CE91B484D4000E4BDA8 /* JSONModelClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelClassProperty.m; sourceTree = "<group>"; };
+		11DC5CEA1B484D4000E4BDA8 /* JSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError.h; sourceTree = "<group>"; };
+		11DC5CEB1B484D4000E4BDA8 /* JSONModelError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelError.m; sourceTree = "<group>"; };
+		11DC5CED1B484D4000E4BDA8 /* NSArray+JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JSONModel.h"; sourceTree = "<group>"; };
+		11DC5CEE1B484D4000E4BDA8 /* NSArray+JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JSONModel.m"; sourceTree = "<group>"; };
+		11DC5CEF1B484D4000E4BDA8 /* JSONModelLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelLib.h; sourceTree = "<group>"; };
+		11DC5CF11B484D4000E4BDA8 /* JSONAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONAPI.h; sourceTree = "<group>"; };
+		11DC5CF21B484D4000E4BDA8 /* JSONAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONAPI.m; sourceTree = "<group>"; };
+		11DC5CF31B484D4000E4BDA8 /* JSONHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONHTTPClient.h; sourceTree = "<group>"; };
+		11DC5CF41B484D4000E4BDA8 /* JSONHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONHTTPClient.m; sourceTree = "<group>"; };
+		11DC5CF51B484D4000E4BDA8 /* JSONModel+networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONModel+networking.h"; sourceTree = "<group>"; };
+		11DC5CF61B484D4000E4BDA8 /* JSONModel+networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONModel+networking.m"; sourceTree = "<group>"; };
+		11DC5CF81B484D4000E4BDA8 /* JSONKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper.h; sourceTree = "<group>"; };
+		11DC5CF91B484D4000E4BDA8 /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
+		11DC5CFA1B484D4000E4BDA8 /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
+		11DC5CFB1B484D4000E4BDA8 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11AB000F1B3915B40031379D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11ABFFF61B3915B40031379D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11DC5CDE1B484C8500E4BDA8 /* SystemConfiguration.framework in Frameworks */,
+				11B6E5481B3A1C500036D492 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11AB00151B3915B40031379D /* Health ExporterTests */ = {
+			isa = PBXGroup;
+			children = (
+				11AB00181B3915B40031379D /* Health_ExporterTests.m */,
+				11AB00161B3915B40031379D /* Supporting Files */,
+			);
+			path = "Health ExporterTests";
+			sourceTree = "<group>";
+		};
+		11AB00161B3915B40031379D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11AB00171B3915B40031379D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11ABFFF01B3915B40031379D = {
+			isa = PBXGroup;
+			children = (
+				11C6A9981B48CA4E00C3A8E9 /* iTunesArtwork */,
+				11DC5CE21B484D4000E4BDA8 /* JSONModel */,
+				11DC5CDD1B484C8500E4BDA8 /* SystemConfiguration.framework */,
+				11B6E5471B3A1C500036D492 /* HealthKit.framework */,
+				11ABFFFB1B3915B40031379D /* Health Exporter */,
+				11AB00151B3915B40031379D /* Health ExporterTests */,
+				11ABFFFA1B3915B40031379D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11ABFFFA1B3915B40031379D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11ABFFF91B3915B40031379D /* Health Exporter.app */,
+				11AB00121B3915B40031379D /* Health ExporterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11ABFFFB1B3915B40031379D /* Health Exporter */ = {
+			isa = PBXGroup;
+			children = (
+				11AB00241B3916350031379D /* Health Exporter.entitlements */,
+				11AB00001B3915B40031379D /* AppDelegate.h */,
+				11AB00011B3915B40031379D /* AppDelegate.m */,
+				11AB00061B3915B40031379D /* Main.storyboard */,
+				11AB00091B3915B40031379D /* Images.xcassets */,
+				11AB000B1B3915B40031379D /* LaunchScreen.xib */,
+				11ABFFFC1B3915B40031379D /* Supporting Files */,
+				11AB00271B3917900031379D /* HEHealthKitController.h */,
+				11AB00281B3917900031379D /* HEHealthKitController.m */,
+				11B6E5521B3FAFD30036D492 /* SampleQueryViewController.h */,
+				11B6E5531B3FAFD30036D492 /* SampleQueryViewController.m */,
+				11DC5CCD1B4589AD00E4BDA8 /* HESampleQuery.h */,
+				11DC5CCE1B4589AD00E4BDA8 /* HESampleQuery.m */,
+				11DC5CC91B44DF3600E4BDA8 /* HEQuery.h */,
+				11DC5CCA1B44DF3600E4BDA8 /* HEQuery.m */,
+			);
+			path = "Health Exporter";
+			sourceTree = "<group>";
+		};
+		11ABFFFC1B3915B40031379D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11ABFFFD1B3915B40031379D /* Info.plist */,
+				11ABFFFE1B3915B40031379D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11DC5CE21B484D4000E4BDA8 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				11DC5CE31B484D4000E4BDA8 /* JSONModel */,
+				11DC5CEC1B484D4000E4BDA8 /* JSONModelCategories */,
+				11DC5CEF1B484D4000E4BDA8 /* JSONModelLib.h */,
+				11DC5CF01B484D4000E4BDA8 /* JSONModelNetworking */,
+				11DC5CF71B484D4000E4BDA8 /* JSONModelTransformations */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		11DC5CE31B484D4000E4BDA8 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				11DC5CE41B484D4000E4BDA8 /* JSONModel.h */,
+				11DC5CE51B484D4000E4BDA8 /* JSONModel.m */,
+				11DC5CE61B484D4000E4BDA8 /* JSONModelArray.h */,
+				11DC5CE71B484D4000E4BDA8 /* JSONModelArray.m */,
+				11DC5CE81B484D4000E4BDA8 /* JSONModelClassProperty.h */,
+				11DC5CE91B484D4000E4BDA8 /* JSONModelClassProperty.m */,
+				11DC5CEA1B484D4000E4BDA8 /* JSONModelError.h */,
+				11DC5CEB1B484D4000E4BDA8 /* JSONModelError.m */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		11DC5CEC1B484D4000E4BDA8 /* JSONModelCategories */ = {
+			isa = PBXGroup;
+			children = (
+				11DC5CED1B484D4000E4BDA8 /* NSArray+JSONModel.h */,
+				11DC5CEE1B484D4000E4BDA8 /* NSArray+JSONModel.m */,
+			);
+			path = JSONModelCategories;
+			sourceTree = "<group>";
+		};
+		11DC5CF01B484D4000E4BDA8 /* JSONModelNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				11DC5CF11B484D4000E4BDA8 /* JSONAPI.h */,
+				11DC5CF21B484D4000E4BDA8 /* JSONAPI.m */,
+				11DC5CF31B484D4000E4BDA8 /* JSONHTTPClient.h */,
+				11DC5CF41B484D4000E4BDA8 /* JSONHTTPClient.m */,
+				11DC5CF51B484D4000E4BDA8 /* JSONModel+networking.h */,
+				11DC5CF61B484D4000E4BDA8 /* JSONModel+networking.m */,
+			);
+			path = JSONModelNetworking;
+			sourceTree = "<group>";
+		};
+		11DC5CF71B484D4000E4BDA8 /* JSONModelTransformations */ = {
+			isa = PBXGroup;
+			children = (
+				11DC5CF81B484D4000E4BDA8 /* JSONKeyMapper.h */,
+				11DC5CF91B484D4000E4BDA8 /* JSONKeyMapper.m */,
+				11DC5CFA1B484D4000E4BDA8 /* JSONValueTransformer.h */,
+				11DC5CFB1B484D4000E4BDA8 /* JSONValueTransformer.m */,
+			);
+			path = JSONModelTransformations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11AB00111B3915B40031379D /* Health ExporterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11AB001F1B3915B40031379D /* Build configuration list for PBXNativeTarget "Health ExporterTests" */;
+			buildPhases = (
+				11AB000E1B3915B40031379D /* Sources */,
+				11AB000F1B3915B40031379D /* Frameworks */,
+				11AB00101B3915B40031379D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11AB00141B3915B40031379D /* PBXTargetDependency */,
+			);
+			name = "Health ExporterTests";
+			productName = "Health ExporterTests";
+			productReference = 11AB00121B3915B40031379D /* Health ExporterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		11ABFFF81B3915B40031379D /* Health Exporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11AB001C1B3915B40031379D /* Build configuration list for PBXNativeTarget "Health Exporter" */;
+			buildPhases = (
+				11ABFFF51B3915B40031379D /* Sources */,
+				11ABFFF61B3915B40031379D /* Frameworks */,
+				11ABFFF71B3915B40031379D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Health Exporter";
+			productName = "Health Exporter";
+			productReference = 11ABFFF91B3915B40031379D /* Health Exporter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11ABFFF11B3915B40031379D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Joseph Carson";
+				TargetAttributes = {
+					11AB00111B3915B40031379D = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 11ABFFF81B3915B40031379D;
+					};
+					11ABFFF81B3915B40031379D = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = JN4LSK9PU5;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 11ABFFF41B3915B40031379D /* Build configuration list for PBXProject "Health Exporter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11ABFFF01B3915B40031379D;
+			productRefGroup = 11ABFFFA1B3915B40031379D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11ABFFF81B3915B40031379D /* Health Exporter */,
+				11AB00111B3915B40031379D /* Health ExporterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11AB00101B3915B40031379D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11ABFFF71B3915B40031379D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11AB00081B3915B40031379D /* Main.storyboard in Resources */,
+				11AB000D1B3915B40031379D /* LaunchScreen.xib in Resources */,
+				11AB000A1B3915B40031379D /* Images.xcassets in Resources */,
+				11C6A9991B48CA4E00C3A8E9 /* iTunesArtwork in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11AB000E1B3915B40031379D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11DC5D031B484D4000E4BDA8 /* JSONModelError.m in Sources */,
+				11DC5D051B484D4000E4BDA8 /* NSArray+JSONModel.m in Sources */,
+				11DC5D011B484D4000E4BDA8 /* JSONModelClassProperty.m in Sources */,
+				11AB00191B3915B40031379D /* Health_ExporterTests.m in Sources */,
+				11DC5CD01B4589AD00E4BDA8 /* HESampleQuery.m in Sources */,
+				11DC5D0D1B484D4000E4BDA8 /* JSONKeyMapper.m in Sources */,
+				11AB002A1B3917900031379D /* HEHealthKitController.m in Sources */,
+				11DC5CFF1B484D4000E4BDA8 /* JSONModelArray.m in Sources */,
+				11DC5D0B1B484D4000E4BDA8 /* JSONModel+networking.m in Sources */,
+				11DC5CCC1B44DF3600E4BDA8 /* HEQuery.m in Sources */,
+				11DC5D071B484D4000E4BDA8 /* JSONAPI.m in Sources */,
+				11DC5D0F1B484D4000E4BDA8 /* JSONValueTransformer.m in Sources */,
+				11DC5D091B484D4000E4BDA8 /* JSONHTTPClient.m in Sources */,
+				11DC5CFD1B484D4000E4BDA8 /* JSONModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11ABFFF51B3915B40031379D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11DC5CFC1B484D4000E4BDA8 /* JSONModel.m in Sources */,
+				11DC5D001B484D4000E4BDA8 /* JSONModelClassProperty.m in Sources */,
+				11DC5D0A1B484D4000E4BDA8 /* JSONModel+networking.m in Sources */,
+				11DC5CFE1B484D4000E4BDA8 /* JSONModelArray.m in Sources */,
+				11DC5D081B484D4000E4BDA8 /* JSONHTTPClient.m in Sources */,
+				11DC5D0C1B484D4000E4BDA8 /* JSONKeyMapper.m in Sources */,
+				11DC5D041B484D4000E4BDA8 /* NSArray+JSONModel.m in Sources */,
+				11DC5D0E1B484D4000E4BDA8 /* JSONValueTransformer.m in Sources */,
+				11DC5D061B484D4000E4BDA8 /* JSONAPI.m in Sources */,
+				11DC5D021B484D4000E4BDA8 /* JSONModelError.m in Sources */,
+				11AB00291B3917900031379D /* HEHealthKitController.m in Sources */,
+				11DC5CCF1B4589AD00E4BDA8 /* HESampleQuery.m in Sources */,
+				11DC5CCB1B44DF3600E4BDA8 /* HEQuery.m in Sources */,
+				11AB00021B3915B40031379D /* AppDelegate.m in Sources */,
+				11B6E5541B3FAFD30036D492 /* SampleQueryViewController.m in Sources */,
+				11ABFFFF1B3915B40031379D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11AB00141B3915B40031379D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11ABFFF81B3915B40031379D /* Health Exporter */;
+			targetProxy = 11AB00131B3915B40031379D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		11AB00061B3915B40031379D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11AB00071B3915B40031379D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11AB000B1B3915B40031379D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11AB000C1B3915B40031379D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11AB001A1B3915B40031379D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11AB001B1B3915B40031379D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11AB001D1B3915B40031379D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Health Exporter/Health Exporter.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph Carson (7VSFQUVTSY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joseph Carson (7VSFQUVTSY)";
+				INFOPLIST_FILE = "Health Exporter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8e2d604b-d2d6-4921-a905-12f5c5378261";
+			};
+			name = Debug;
+		};
+		11AB001E1B3915B40031379D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Health Exporter/Health Exporter.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph Carson (7VSFQUVTSY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joseph Carson (7VSFQUVTSY)";
+				INFOPLIST_FILE = "Health Exporter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8e2d604b-d2d6-4921-a905-12f5c5378261";
+			};
+			name = Release;
+		};
+		11AB00201B3915B40031379D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Health ExporterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Health Exporter.app/Health Exporter";
+			};
+			name = Debug;
+		};
+		11AB00211B3915B40031379D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Health ExporterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Health Exporter.app/Health Exporter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11AB001C1B3915B40031379D /* Build configuration list for PBXNativeTarget "Health Exporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11AB001D1B3915B40031379D /* Debug */,
+				11AB001E1B3915B40031379D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11AB001F1B3915B40031379D /* Build configuration list for PBXNativeTarget "Health ExporterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11AB00201B3915B40031379D /* Debug */,
+				11AB00211B3915B40031379D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11ABFFF41B3915B40031379D /* Build configuration list for PBXProject "Health Exporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11AB001A1B3915B40031379D /* Debug */,
+				11AB001B1B3915B40031379D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11ABFFF11B3915B40031379D /* Project object */;
+}
