@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="/Users/josephcarson/workspace/SemanticWebAssignment5/lib/book/antlr-2.7.5.jar"/>
+	<classpathentry kind="lib" path="/Users/josephcarson/workspace/SemanticWebAssignment5/lib/book/arq-extra.jar"/>
+	<classpathentry kind="lib" path="/Users/josephcarson/workspace/SemanticWebAssignment5/lib/book/arq.jar"/>
+	<classpathentry kind="lib" path="/Users/josephcarson/workspace/SemanticWebAssignment5/lib/book/aterm-java-1.6.jar"/>
+	<classpathentry kind="lib" path="/Users/josephcarson/workspace/SemanticWebAssignment5/lib/book/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/josephcarson/workspace/SemanticWebAssignment5/lib/book/concurrent.jar"/>
+	<classpathentry kind="lib" path="/Users/josephcarson/workspace/SemanticWebAssignment5/lib/book/icu4j_3_4.jar"/>
+	<classpathentry kind="lib" path="/Users/josephcarson/workspace/SemanticWebAssignment5/lib/book/iri.jar"/>
+	<classpathentry kind="lib" path="/Users/josephcarson/workspace/SemanticWebAssignment5/lib/book/jena.jar"/>
+	<classpathentry kind="lib" path="/Users/josephcarson/workspace/SemanticWebAssignment5/lib/book/mysql-connector-java-5.0.7-bin.jar"/>
+	<classpathentry kind="lib" path="/Users/josephcarson/workspace/SemanticWebAssignment5/lib/book/pellet.jar"/>
+	<classpathentry kind="lib" path="/Users/josephcarson/workspace/SemanticWebAssignment5/lib/book/relaxngDatatype.jar"/>
+	<classpathentry kind="lib" path="/Users/josephcarson/workspace/SemanticWebAssignment5/lib/book/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="/Users/josephcarson/workspace/SemanticWebAssignment5/lib/book/xsdlib.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

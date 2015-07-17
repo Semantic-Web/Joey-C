@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-16 "http://www.semanticweb.org/josephcarson/ontologies/2015/6/untitled-ontology-16#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/josephcarson/ontologies/2015/6/untitled-ontology-16#"
+     xml:base="http://www.semanticweb.org/josephcarson/ontologies/2015/6/untitled-ontology-16"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-16="http://www.semanticweb.org/josephcarson/ontologies/2015/6/untitled-ontology-16#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/josephcarson/ontologies/2015/6/untitled-ontology-16"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/josephcarson/ontologies/2015/6/untitled-ontology-16#hasFriend -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-16;hasFriend">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/josephcarson/ontologies/2015/6/untitled-ontology-16#hasFirstName -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-16;hasFirstName">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/josephcarson/ontologies/2015/6/untitled-ontology-16#hasLastName -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-16;hasLastName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/josephcarson/ontologies/2015/6/untitled-ontology-16#hasName -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-16;hasName"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/josephcarson/ontologies/2015/6/untitled-ontology-16#Individual -->
+
+    <owl:Class rdf:about="&untitled-ontology-16;Individual"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/josephcarson/ontologies/2015/6/untitled-ontology-16#PersonDickie -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-16;PersonDickie">
+        <rdf:type rdf:resource="&untitled-ontology-16;Individual"/>
+        <hasLastName>Olmedo</hasLastName>
+        <hasName>Dicki Olmedo</hasName>
+        <hasFirstName>Dicki</hasFirstName>
+        <hasFriend rdf:resource="&untitled-ontology-16;PersonMe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/josephcarson/ontologies/2015/6/untitled-ontology-16#PersonKeith -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-16;PersonKeith">
+        <rdf:type rdf:resource="&untitled-ontology-16;Individual"/>
+        <hasName>Keith Wall</hasName>
+        <hasLastName>Wall</hasLastName>
+        <hasFirstName>Keith</hasFirstName>
+        <hasFriend rdf:resource="&untitled-ontology-16;PersonMe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/josephcarson/ontologies/2015/6/untitled-ontology-16#PersonMe -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-16;PersonMe">
+        <rdf:type rdf:resource="&untitled-ontology-16;Individual"/>
+        <hasLastName>Carson</hasLastName>
+        <hasFirstName>Joe</hasFirstName>
+        <hasName>Joe Carson</hasName>
+        <hasFriend rdf:resource="&untitled-ontology-16;PersonDickie"/>
+        <hasFriend rdf:resource="&untitled-ontology-16;PersonKeith"/>
+        <hasFriend rdf:resource="&untitled-ontology-16;PersonShamir"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/josephcarson/ontologies/2015/6/untitled-ontology-16#PersonShamir -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-16;PersonShamir">
+        <rdf:type rdf:resource="&untitled-ontology-16;Individual"/>
+        <hasLastName>Benjamin</hasLastName>
+        <hasFirstName>Shamir</hasFirstName>
+        <hasName>Shamir Benjamin</hasName>
+        <hasFriend rdf:resource="&untitled-ontology-16;PersonMe"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

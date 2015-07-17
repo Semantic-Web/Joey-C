@@ -1,0 +1,33 @@
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:admin="http://webns.net/mvcb/">
+<foaf:PersonalProfileDocument rdf:about="">
+  <foaf:maker rdf:resource="#me"/>
+  <foaf:primaryTopic rdf:resource="#me"/>
+  <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
+  <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
+</foaf:PersonalProfileDocument>
+<foaf:Person rdf:ID="me">
+<foaf:name>Joseph Carson</foaf:name>
+<foaf:givenname>Joseph</foaf:givenname>
+<foaf:family_name>Carson</foaf:family_name>
+<foaf:nick>Joey</foaf:nick>
+<foaf:mbox rdf:resource="mailto:jcarson8@fau.edu"/>
+<foaf:workplaceHomepage rdf:resource="http://www.citrix.com"/>
+<foaf:workInfoHomepage rdf:resource="https://en.wikipedia.org/wiki/Software_engineer"/>
+<foaf:schoolHomepage rdf:resource="http://www.fau.edu"/>
+<foaf:knows>
+<foaf:Person rdf:ID="HeatherL">
+<foaf:name>Heather Lacy</foaf:name>
+<foaf:mbox rdf:resource="mailto:hlacy@fau.edu"/></foaf:Person></foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:ID="RichardO">
+<foaf:name>Richard Olmedo</foaf:name>
+<foaf:mbox rdf:resource="mailto:punxglow2@gmail.com"/></foaf:Person></foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:ID="SamB">
+<foaf:name>Sam Benjamin</foaf:name>
+<foaf:mbox rdf:resource="mailto:flamflamsam@gmail.com"/></foaf:Person></foaf:knows></foaf:Person>
+</rdf:RDF>
