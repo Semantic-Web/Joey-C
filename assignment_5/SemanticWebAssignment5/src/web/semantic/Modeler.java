@@ -141,13 +141,13 @@ public class Modeler {
 		resource = alignmentModel.createResource(defaultNameSpace + "RichardO");
 		prop = alignmentModel.createProperty("http://www.w3.org/2002/07/owl#sameAs");
 		obj = alignmentModel.createResource(externalNameSpace + "PersonDickie");
-		//alignmentModel.add(resource,prop,obj);
+		alignmentModel.add(resource,prop,obj);
 		
 		// State that sem web is the same person as Semantic Web
 		resource = alignmentModel.createResource(defaultNameSpace + "SamB");
 		prop = alignmentModel.createProperty("http://www.w3.org/2002/07/owl#sameAs");
 		obj = alignmentModel.createResource(externalNameSpace + "PersonShamir");
-		//alignmentModel.add(resource,prop,obj);
+		alignmentModel.add(resource,prop,obj);
 	}
 	
 	private void bindReasoner()
