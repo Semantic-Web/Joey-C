@@ -2,9 +2,6 @@ package web.semantic;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Iterator;
-import org.mindswap.pellet.jena.PelletReasonerFactory;
-
 
 import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.QueryExecution;
@@ -12,12 +9,14 @@ import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QueryFactory;
 import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
-import com.hp.hpl.jena.rdf.model.*;
+import com.hp.hpl.jena.rdf.model.InfModel;
+import com.hp.hpl.jena.rdf.model.Model;
+import com.hp.hpl.jena.rdf.model.ModelFactory;
+import com.hp.hpl.jena.rdf.model.Property;
+import com.hp.hpl.jena.rdf.model.RDFNode;
+import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.reasoner.Reasoner;
 import com.hp.hpl.jena.reasoner.ReasonerRegistry;
-import com.hp.hpl.jena.reasoner.ValidityReport;
-import com.hp.hpl.jena.reasoner.rulesys.GenericRuleReasoner;
-import com.hp.hpl.jena.reasoner.rulesys.Rule;
 import com.hp.hpl.jena.util.FileManager;
 
 
@@ -140,7 +139,7 @@ public class Modeler {
 		
 		// State that sem web is the same person as Semantic Web
 		resource = alignmentModel.createResource(defaultNameSpace + "RichardO");
-		//prop = alignmentModel.createProperty("http://www.w3.org/2002/07/owl#sameAs");
+		prop = alignmentModel.createProperty("http://www.w3.org/2002/07/owl#sameAs");
 		obj = alignmentModel.createResource(externalNameSpace + "PersonDickie");
 		//alignmentModel.add(resource,prop,obj);
 		
