@@ -1,0 +1,44 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+ 	<dcat:Dataset rdf:about="http://fau.edu/catalog/test/dcat_test">
+		<owl:sameAs rdf:resource="urn:uuid:1b1fedfc-8cca-4098-bc10-f137ad4b3dfc"></owl:sameAs>
+		<dct:description>A test DCAT catalog.</dct:description>
+		<dcat:keyword>Florida Atlantic University</dcat:keyword>
+		<dcat:keyword>DCAT</dcat:keyword>
+		<dcat:keyword>Java</dcat:keyword>
+		<dcat:keyword>COP 5859</dcat:keyword>
+		<foaf:homepage rdf:resource="http://fau.edu/catalog/test"></foaf:homepage>
+   		<rdfs:label>DCAT Test Document</rdfs:label>
+   		<dct:identifier>dcat_test_document</dct:identifier>
+ 		<dct:title>DCAT Test</dct:title>
+		<dcat:distribution>
+	    	<dcat:Distribution>
+	       		<dcat:accessURL rdf:resource="foaf_friends.rdf"></dcat:accessURL>
+	       		<dct:title>Joey Carson's Foafamatic File</dct:title>
+	      	</dcat:Distribution>
+	  	</dcat:distribution>
+		<dcat:distribution>
+		    <dcat:Distribution>
+		        <dcat:accessURL rdf:resource="people.blah"></dcat:accessURL>
+		       <dct:title>NCDC Climate Data Online Map Server</dct:title>
+		    </dcat:Distribution>
+		</dcat:distribution>
+		<dcat:distribution>
+		    <dcat:Distribution>
+		        <dcat:accessURL rdf:resource="http://stackoverflow.com/questions/13401859/create-instance-of-classes-of-owl-ontology-and-save-them-in-rdf-store"></dcat:accessURL>
+		       <dct:title>Stack Overflow</dct:title>
+		    </dcat:Distribution>
+		</dcat:distribution>
+		<dct:relation>
+		  <rdf:Description>
+		    <rdfs:label>bbox-east-long</rdfs:label>
+		    <rdf:value>-60.0</rdf:value>
+		  </rdf:Description>
+		</dct:relation>
+		<dct:relation>
+		  <rdf:Description>
+		    <rdfs:label>resource-type</rdfs:label>
+		    <rdf:value>dataset</rdf:value>
+		  </rdf:Description>
+		</dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>
