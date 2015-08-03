@@ -21,7 +21,7 @@ public class Test {
 		
 		DCATModel d = new DCATModel();
 		d.setNsPrefix("foaf_friends", foaf_friends);
-		d.load("test/dcat_test.rdf");
+		d.load("test/dcat_test.rdf", foaf_friends);
 		
 		d.setNsPrefix("blah", BlahPerson.getURI());
 		

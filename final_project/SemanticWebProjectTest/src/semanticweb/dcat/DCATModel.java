@@ -189,13 +189,17 @@ public class DCATModel {
 	/**
 	 * Loads the DCAT model into memory.
 	 * @param URI - A URI that is known to produce a valid DCAT document.
+	 * @param baseURI - A URI string used as the base URI for fully qualifying any
+	 * 					relative URI's encountered in all payloads.  Without using
+	 * 					parameter, a caller has no real way of directly addressing
+	 * 					elements that aren't fully qualified. 
 	 * @return An ArrayList<String> of URL's from the DCAT document that 
 	 * 		   were able to be successfully loaded into the dataset model.
 	 *         These can then be used by the caller to set them as prefixes
 	 *         of relative URI's in each model, similar to the base URI
 	 *         that would be passed to {@link Model#read(InputStream, String)}.
 	 */
-	public ArrayList<String> load(String URI)
+	public ArrayList<String> load(String URI, String baseURI)
 	{
 		ArrayList<String> distributionURLs = new ArrayList<String>();
 		// 1. Load the DCAT model into memory.
@@ -237,7 +241,7 @@ public class DCATModel {
 				
 				if ( urlLang != null ) {
 					try {
-						datasetModel.read(url, "http://dcat.query.defaultns#", urlLang.getName());
+						datasetModel.read(url, baseURI, urlLang.getName());
 						distributionURLs.add(url);
 					} catch (Exception e) {
 						System.err.println("Failed reading " + url + " into model.");
