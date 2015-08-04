@@ -143,6 +143,7 @@ public class DCATModel {
 	public void loadOnotology(String ontologyURL)
 	{
 		ontologiesModel.read(ontologyURL);
+		inferredModel = null;
 	}
 	
 	public void clearOnotologies()
@@ -256,8 +257,15 @@ public class DCATModel {
 		return distributionURLs;
 	}
 	
+	/**
+	 * Adds an ontology which impacts all inferred queries.
+	 * @param s - Subject
+	 * @param p - Predicate
+	 * @param o - Object.
+	 */
 	public void addOntologyAssertion(Resource s, Property p, RDFNode o) {
 		this.ontologiesModel.add(s, p, o);
+		this.inferredModel = null;
 	}
 	
 	/**
